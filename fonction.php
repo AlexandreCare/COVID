@@ -18,26 +18,6 @@
         }
     }
     
-    //formulaire pour la connexion de l'utilisateur
-    function form(){
-        if(isset($_POST['nom'])){
-            //selection des users 
-            $Result = $MaBase->query("SELECT * FROM `User` WHERE `pseudo`='".$_POST['nom']."' AND `MDP` = '".$_POST['MDP']."'");
-            if($Result->rowCount()>0){
-
-                $tab = $Result->fetch();
-                //si il existe et que le mot de passe correspond -> connection
-                $_SESSION["Logged"] = true;
-                $_SESSION["idUser"] = $tab['id'];
-                $_SESSION["admin"] = $tab['admin'];
-                //réponse a la connection
-                return true;
-            }else{
-                //sinon affiche un msg d'erreur
-                echo `<h3>Le Pseudo ou le mot de passe est incorrect...</h3>`;
-            }
-        }
-    }
     //fonction de déconnection
     function deco(){
         //deconection

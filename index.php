@@ -56,8 +56,14 @@
     </div>
     <?php
     }else{
-        header("location: acceuil.php");
+        $gens = $MaBase->query("SELECT * FROM Users");
+        $sos=$gens->fetch();
+
+        echo "<h1>Bienvenue ".$sos["pseudo"]."</h1>";
+
+        deco();
     }
+    
     ?>
 </body>
 </html>
