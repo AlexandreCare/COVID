@@ -1,0 +1,39 @@
+body{
+    background-image: url("");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding: 1%;
+    text-align: center;
+}
+.arti{
+    text-align: center;
+    margin: auto;
+    width: 50vh;
+}
+.form{
+    width: 40vh;
+}
+.input[type=text], .input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+.input[type=submit] {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-color: #000000;
+    border: 2px solid;
+    width: 100%;
+}
+.input[type=submit]:hover {
+    background-color: #74d4a4;
+    color: #000000;
+}

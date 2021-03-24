@@ -8,31 +8,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="CSS/class.css">
+    <link rel="stylesheet" href="Css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="" /><!--icone de l'onglet-->
     <title>COVID</title>
 </head>
 <body>
-    <div class="space">
-        <div class="arti3">
-            <div class="form"> <!--classe css "form-->
-                <form class="form1" action="" method="post">
-                    <?php
-                        form($MaBase);
-                    ?>
-                </form>
-            </div>
-        </div>
+    <div class="arti">
+        <form class="form" action="" method="POST">
+            <?php
+                countuser($MaBase);
+                connect($MaBase);
+            ?>
+        </form>   
     </div>
     <?php
     }else{
-        $gens = $MaBase->query("SELECT * FROM Users WHERE `id`='".$_SESSION["idUser"]."'");
-        $sos=$gens->fetch();
-
-        echo "<h1>Bienvenue ".$sos["pseudo"]."</h1>";
-
-        deco();
+        name($MaBase);
     }
     ?>
 </body>
