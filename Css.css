@@ -8,11 +8,16 @@ body{
 }
 .arti{
     text-align: center;
-    margin: auto;
-    width: 50vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+.arti2{
+    text-align: left;
+    width: 100%;
 }
 .form{
     width: 40vh;
+    margin: auto;
 }
 .input[type=text], .input[type=password] {
     width: 100%;
@@ -22,7 +27,6 @@ body{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-/* Set a style for all buttons */
 .input[type=submit] {
     background-color: #7e7e7e;
     color: white;
@@ -36,4 +40,34 @@ body{
 .input[type=submit]:hover {
     background-color: #74d4a4;
     color: #000000;
+}
+.input2[type=submit] {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-color: #000000;
+    border: 2px solid;
+    width: auto;
+}
+.input2[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+a.bouton {
+    padding: 10px 30px; 
+    background: #000000; 
+    color: white;
+    margin-top: 5%;
+    
+}
+a.bouton:hover {
+    background: #16dcff;
+    color: #000000; 
+    border-color: #000000;
+    border: 2px solid;
+}
+.esp{
+    height: 5vh;
 }
