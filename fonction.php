@@ -33,4 +33,32 @@ if(!is_null($mabase)){
 }else{
     $errorMessage.= "Vous n'avez pas les bases";
 }
+function img(){
+    ?>
+    <div class="">
+        <img src='IMG/deroulant/1.jpg' id="bg" style="display: block;">  <!-- image 1-->
+        <img src='IMG/deroulant/2.jpg' id="bg" style="display: none;" >  <!-- image 2-->
+        <img src='IMG/deroulant/3.jpg' id="bg" style="display: none;" > <!-- image 3-->
+        <img src='IMG/deroulant/4.jpg' id="bg" style="display: none;" > <!-- image 4-->
+        <img src='IMG/deroulant/5.jpg' id="bg" style="display: none;" > <!-- image 5-->
+        <img src='IMG/deroulant/6.jpg' id="bg" style="display: none;" > <!-- image 6-->
+        <script type="text/javascript">
+            // image deffilante 
+            I = 0 ;
+            Imax = document.images.length - 1 ;  
+            setTimeout(suivante, 3000) ;   // definition du temps de passage des images         
+
+            function suivante(){
+                document.images[I].style.display = "none" ; 
+                if ( I < Imax )  //boucle defilante 
+                    I++;
+                else
+                    I=0;    
+                document.images[I].style.display = "block";
+                setTimeout(suivante, 3000) ;
+            }
+        </script>
+    </div>
+    <?php
+}
 ?>

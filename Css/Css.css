@@ -1,0 +1,100 @@
+body{
+    background-image: url("../IMG/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding: 1%;
+    text-align: center;
+}
+.arti{
+    text-align: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+.arti2{
+    text-align: left;
+    width: 100%;
+}
+.form{
+    width: 40vh;
+    margin: auto;
+}
+.input[type=text], .input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.input[type=submit] {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-color: #000000;
+    border: 2px solid;
+    width: 100%;
+}
+.input[type=submit]:hover {
+    background-color: #74d4a4;
+    color: #000000;
+}
+.input2[type=submit] {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-color: #000000;
+    border: 2px solid;
+    width: 15vh;
+}
+.input2[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+a.bouton {
+    padding: 10px 30px; 
+    background: #000000; 
+    color: white;
+    margin-top: 5%;
+    
+}
+a.bouton:hover {
+    background: #16dcff;
+    color: #000000; 
+    border-color: #000000;
+    border: 2px solid;
+}
+.esp{
+    height: 5vh;
+}
+#bg{
+    display:block;
+    width: 40%;
+    left:0;
+    top:0;
+    padding:0;
+    margin: auto;
+}
+.space{
+    margin: auto;
+    display: inline-block;
+}
+.img{
+    width: 25vh;
+    height: 25vh;
+}
+.img:hover{
+    transform: scale(1.05);
+	translate: transform;
+	transition-duration: 0.2s;
+}
+.nom{
+    background-color: #7e7e7e;
+}
+#idgens{
+    content: "lul";
+}
