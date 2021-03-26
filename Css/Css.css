@@ -93,7 +93,8 @@ a.bouton:hover {
 	transition-duration: 0.2s;
 }
 .nom{
-    background-color: #7e7e7e;
+    background-color: #7e7e7e8c;
+    border-radius:3px ;
 }
 #idgens{
     content: "lul";

@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" href="Css/Css.css">
     <link rel="shortcut icon" href="IMG/logo.ico">
     <script src="Js/perso.js"></script>
-    <title>Acceuil</title>
+    <title>Accueil</title>
 </head>
 <body>
     
@@ -36,9 +36,9 @@ session_start();
         }
         
         if(!empty($Perso->getNom())){
-            echo '<p id="idgens"><a class="bouton" href="combat.php">Combatre avec '.$Perso->getNom().'</a></p>';
+            echo '<p><a class="bouton" href="combat.php">Combatre avec '.$Perso->getNom().'</a></p>';
         }else{
-            echo '<p id="idgens"><a class="bouton" href="combat.php">Combatre avec '.$Joueur1->getNomPersonnage().'</a></p>';
+            echo '<p><a class="bouton" href="combat.php">Combatre avec '.$Joueur1->getNomPersonnage().'</a></p>';
         }
     }else{
         echo $errorMessage;

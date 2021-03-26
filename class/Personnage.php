@@ -39,7 +39,8 @@ class Personnage{
     //et permet d'attribuer un perso à un user
     // retour un objet personnage
     public function getChoixPersonnage(){
-        /*
+        $Result = $this->_bdd->query("SELECT * FROM `Personnage` ");
+        
         ?>
         <form action="" method="post" onchange="this.submit()">
             <select name="idPersonnage" id="idPersonnage">
@@ -50,12 +51,6 @@ class Personnage{
                 ?>
             </select>
         </form>
-        <?php
-        */
-
-        //Moi test
-        $Result = $this->_bdd->query("SELECT * FROM `Personnage` "); 
-        ?>
             <h1><u>Séléction du personnage :</u></h1>
         <?php       
         while($tab=$Result->fetch()){
@@ -68,14 +63,10 @@ class Personnage{
                 </div>
             <?php
         }
-        /*
-        if (isset($_POST["idPersonnage"])){
-            $this->setPersonnageById($_POST["idPersonnage"]);
-        }
-        */
+        $this->setPersonnageById(?><script>getId()</script><?php);
+        
         return $this;
     }
-
 }
 
 ?>
